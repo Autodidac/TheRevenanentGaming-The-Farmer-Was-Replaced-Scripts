@@ -16,7 +16,7 @@ while True:
 
 
 
-#next up after unlocking if statements
+#next up after unlocking if statements, no need to run this for wood longer than to unlock everything you can, the next one produces too much anyway
 
 while move(North):
 	if can_harvest():
