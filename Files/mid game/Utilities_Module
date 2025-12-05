@@ -4,4 +4,10 @@ def move_n_dir(n, dir):
 		
 		
 def is_even(n):
-	return n % 2 == 0
+	return n % 2 == 0	
+	
+def should_tree(posx,posy):
+	if not posy == 0:
+		if is_even(posx + posy) or posx == posy:
+			return True
+	return False
