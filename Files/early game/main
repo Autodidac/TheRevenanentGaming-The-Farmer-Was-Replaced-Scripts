@@ -5,6 +5,8 @@ harvest()
 harvest()
 do_a_flip()
 
+
+
 #after unlock while
 while True:
 	if can_harvest():
@@ -12,7 +14,18 @@ while True:
 	if can_harvest():
 		harvest()
 
+
+
 #next up after unlocking if statements
+
+while move(North):
+	if can_harvest():
+		harvest()
+		plant(Entities.Bush)
+
+
+
+#after unlocking operators
 
 while move(North):
 	while True:
