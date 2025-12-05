@@ -32,6 +32,33 @@ while move(North):
 		if get_pos_y() == 0:
 			if can_harvest():
 				harvest()
+			#if get_ground_type() == Grounds.Grassland:
+				#till()
+			#if get_ground_type() == Grounds.Soil:
+				#plant(Entities.Carrot)
+		if get_pos_y() == 1:
+			if can_harvest():
+				harvest()
+				plant(Entities.Bush)
+				#print(get_water())
+			#if get_water() == False:
+				#use_item(Items.Water)
+		if get_pos_y() == 2:
+			harvest()
+			#do_a_flip()
+			#pet_the_piggy()
+			move(East)
+		break
+
+
+
+# you can remove the comments after unlocking each, watering, carrots
+
+while move(North):
+	while True:
+		if get_pos_y() == 0:
+			if can_harvest():
+				harvest()
 			if get_ground_type() == Grounds.Grassland:
 				till()
 			if get_ground_type() == Grounds.Soil:
