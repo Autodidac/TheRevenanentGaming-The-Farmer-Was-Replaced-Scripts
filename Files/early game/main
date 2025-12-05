@@ -7,7 +7,7 @@ do_a_flip()
 
 
 
-#after unlock while
+#after unlock while, let this one run for 30-60 minutes or longer to stockpile some grass
 while True:
 	if can_harvest():
 		harvest()
