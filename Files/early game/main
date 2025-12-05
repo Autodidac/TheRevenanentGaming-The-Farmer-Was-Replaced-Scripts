@@ -1,3 +1,19 @@
+#start with this
+harvest()
+harvest()
+harvest()
+harvest()
+do_a_flip()
+
+#after unlock while
+while True:
+	if can_harvest():
+		harvest()
+	if can_harvest():
+		harvest()
+
+#next up after unlocking import
+
 import Utilities_Module
 import Research_Module
 
