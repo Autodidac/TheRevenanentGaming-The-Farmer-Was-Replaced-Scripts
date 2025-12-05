@@ -1,5 +1,5 @@
+required_unautomatable_human_readable_only = [	Unlocks.Plant, Unlocks.Debug, Unlocks.Operators, Unlocks.Senses, Unlocks.Variables, Unlocks.Functions, 	Unlocks.Import, Unlocks.Lists, Unlocks.Dictionaries ]
 repeat = [Unlocks.Speed, Unlocks.Grass, Unlocks.Expand, Unlocks.Carrots, Unlocks.Watering, 	Unlocks.Fertilizer, Unlocks.Trees, Unlocks.Sunflowers, Unlocks.Mazes, Unlocks.Pumpkins, Unlocks.Polyculture ]
-required_unautomatable_human_readable_only = [	Unlocks.Plant, Unlocks.Debug, Unlocks.Operators, Unlocks.Senses, Unlocks.Variables, Unlocks.Functions, 	Unlocks.Import, Unlocks.Lists ]
 
 #use with unlocks(1) increase n with level of research for all available research
 def unlocks(a):
