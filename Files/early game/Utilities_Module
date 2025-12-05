@@ -1,7 +1,0 @@
-def move_n_dir(n, dir):
-	for i in range(n):
-		move(dir)
-		
-		
-def is_even(n):
-	return n % 2 == 0
