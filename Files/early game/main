@@ -52,7 +52,7 @@ while move(North):
 
 
 
-# you can remove the comments after unlocking each, watering, carrots
+# you can remove the comments after unlocking each, watering, carrots, debug
 
 while move(North):
 	while True:
