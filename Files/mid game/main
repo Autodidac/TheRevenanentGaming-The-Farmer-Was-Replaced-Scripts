@@ -4,26 +4,31 @@ import Research_Module
 #Requires Research To Automate Research
 #Research_Module.unlocks(1)
 while move(North):
+	#do_a_flip()
+	if can_harvest():
+		harvest()
+		print(get_water())
+	if get_water() < 1:
+		use_item(Items.Water)
 	while True:
-		#Research_Module.unlocks(p)
 		if get_pos_y() == 0:
-				if can_harvest():
+			while move(East) and not get_pos_x() > 4:
+				while can_harvest():
 					harvest()
 				if get_ground_type() == Grounds.Grassland:
 					till()
 				if get_ground_type() == Grounds.Soil:
 					plant(Entities.Carrot)
 					#print(get_Cost(Entities.Carrot))
-		if get_pos_y() == 1:
-				if can_harvest():
-					harvest()
-					plant(Entities.Bush)
-					print(get_water())
-				if get_water() == False:
-					use_item(Items.Water)
-		if get_pos_y() == 2:
-					harvest()
-					do_a_flip()
+		if Utilities_Module.should_tree(get_pos_x(), get_pos_y()):
+			plant(Entities.Tree)
+		else:		
+			plant(Entities.Bush)
+
+		if get_pos_y() == 5:
+			if can_harvest():
+				harvest()
+			move(East)		
 		break
 
 
