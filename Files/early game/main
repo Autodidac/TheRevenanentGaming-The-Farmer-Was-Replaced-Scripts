@@ -7,23 +7,25 @@ while move(North):
 	while True:
 		#Research_Module.unlocks(p)
 		if get_pos_y() == 0:
-				if can_harvest():
-					harvest()
-				if get_ground_type() == Grounds.Grassland:
-					till()
-				if get_ground_type() == Grounds.Soil:
-					plant(Entities.Carrot)
-					#print(get_Cost(Entities.Carrot))
+			if can_harvest():
+				harvest()
+			if get_ground_type() == Grounds.Grassland:
+				till()
+			if get_ground_type() == Grounds.Soil:
+				plant(Entities.Carrot)
+				#print(get_Cost(Entities.Carrot))
 		if get_pos_y() == 1:
-				if can_harvest():
-					harvest()
-					plant(Entities.Bush)
-					print(get_water())
-				if get_water() == False:
-					use_item(Items.Water)
+			if can_harvest():
+				harvest()
+				plant(Entities.Bush)
+				print(get_water())
+			if get_water() == False:
+				use_item(Items.Water)
 		if get_pos_y() == 2:
-					harvest()
-					do_a_flip()
+			harvest()
+			#do_a_flip()
+				#pet_the_piggy()
+			move(East)
 		break
 
 
