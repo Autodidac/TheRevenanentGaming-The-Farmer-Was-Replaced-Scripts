@@ -7,7 +7,8 @@ do_a_flip()
 
 
 
-#after unlock while, let this one run for 30-60 minutes or longer to stockpile some grass
+# after unlocking while loops
+#let this one run for 30-60 minutes or longer to stockpile some grass
 while True:
 	if can_harvest():
 		harvest()
@@ -16,7 +17,9 @@ while True:
 
 
 
-#next up after unlocking if statements, no need to run this for wood longer than to unlock everything you can, the next one produces too much anyway
+# next up after unlocking if statements
+#no need to run this for wood longer than to unlock everything you can,
+#the next one produces too much anyway
 
 while move(North):
 	if can_harvest():
@@ -25,7 +28,7 @@ while move(North):
 
 
 
-#after unlocking operators and senses
+# after unlocking operators and senses
 
 while move(North):
 	while True:
