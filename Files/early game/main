@@ -12,16 +12,10 @@ while True:
 	if can_harvest():
 		harvest()
 
-#next up after unlocking import
+#next up after unlocking if statements
 
-import Utilities_Module
-import Research_Module
-
-#Requires Research To Automate Research
-#Research_Module.unlocks(1)
 while move(North):
 	while True:
-		#Research_Module.unlocks(p)
 		if get_pos_y() == 0:
 			if can_harvest():
 				harvest()
@@ -29,7 +23,6 @@ while move(North):
 				till()
 			if get_ground_type() == Grounds.Soil:
 				plant(Entities.Carrot)
-				#print(get_Cost(Entities.Carrot))
 		if get_pos_y() == 1:
 			if can_harvest():
 				harvest()
@@ -40,7 +33,7 @@ while move(North):
 		if get_pos_y() == 2:
 			harvest()
 			#do_a_flip()
-				#pet_the_piggy()
+			#pet_the_piggy()
 			move(East)
 		break
 
