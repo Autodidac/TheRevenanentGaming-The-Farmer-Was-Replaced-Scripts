@@ -25,7 +25,7 @@ while move(North):
 
 
 
-#after unlocking operators
+#after unlocking operators and senses
 
 while move(North):
 	while True:
